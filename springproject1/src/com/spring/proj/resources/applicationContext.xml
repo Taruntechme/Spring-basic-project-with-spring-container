@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!-- we need to find the xml configuration through this website "https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html" -->
+    <bean class="com.spring.proj.entity.Student" id="stdId">  <!-- this will creat object of student class with stdid name  -->
+    	<property name="name" value="Tarun"></property> <!-- if we will not provide value jvm provide default value as per datatype -->
+    	<property name="rollno" value="101"></property>
+    	<property name="email" value="tarun@gmail.com"></property>
+    </bean>
+
+</beans>
